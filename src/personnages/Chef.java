@@ -7,8 +7,8 @@ public class Chef {
 	private Village village;
 	public Chef(String nom, int force, Village village) {
 		this.nom = nom;
-		this.force = force;
 		this.effetPotion = effetPotion;
+		this.force = force;
 		this.village = village;
 	}
 	public String getNom() {
