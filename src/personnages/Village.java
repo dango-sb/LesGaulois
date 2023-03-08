@@ -1,8 +1,8 @@
 package personnages;
 
 public class Village {
-	private String nom;
 	private Chef chef;
+	private String nom;
 	private int nbVillageois=0;
 	private int nbVillageoisMaximum;
 	private Gaulois[] villageois;
