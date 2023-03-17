@@ -16,6 +16,7 @@ public class Village {
 	}
 	public String getNom() {
 		return nom;
+	
 	}
 	public void ajouterHabitant(Gaulois gaulois){
 		if(nbVillageois!=nbVillageoisMaximum){
