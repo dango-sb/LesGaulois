@@ -1,7 +1,7 @@
 package personnages;
 import java.util.Random;
 
-public class Druide {
+public class Druide{
 	private String nom;
 	private int effetPotionMin;
 	private int effetPotionMax;
@@ -10,7 +10,6 @@ public class Druide {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
 		this.effetPotionMax = effetPotionMax;
-		this.preparerPotion = preparerPotion;
 		parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " à "
 		+ effetPotionMax + ".");
 	}

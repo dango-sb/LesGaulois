@@ -1,27 +1,30 @@
 package personnages;
 
-public class Chef {
+public class Chef extends Gaulois {
 	private String nom;
 	private int force;
-	private int effetPotion = 1;
+	private int effetPotion;
 	private Village village;
-	public Chef(String nom, int force, Village village) {
-		this.nom = nom;
-		this.effetPotion = effetPotion;
-		this.force = force;
+	public Chef(String nom, int force, int effetPotion, Village village) {
+		super(nom,force,effetPotion);
 		this.village = village;
 	}
 	public String getNom() {
-		return nom;
+		return super.getNom();
 	}
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "« " + texte + "»");
 	}
-	private String prendreParole() {
+	protected String prendreParole() {
 		return "Le chef " + nom + " du village " + village.getNom() + " : ";
 	}
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
+	}
+		
+	public String toString() {
+		String etatPersonnage = super.toString();
+		return "Chef" + etatPersonnage;
 	}
 }

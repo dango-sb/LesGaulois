@@ -39,9 +39,9 @@ public class Village {
 	
 	public static void main(String[] args){
 		Village village = new Village("Village des Irréductibles", 30);
-		Chef abraracourcix = new Chef("Abraracourcix", 6, village);
-		Gaulois asterix = new Gaulois("Asterix", 6);
-		Gaulois obelix = new Gaulois("Obelix",25);
+		Chef abraracourcix = new Chef("Abraracourcix", 6, 1,village);
+		Gaulois asterix = new Gaulois("Asterix", 6,1);
+		Gaulois obelix = new Gaulois("Obelix",25,1);
 		village.setChef(abraracourcix);
 		village.ajouterHabitant(obelix);
 		village.ajouterHabitant(asterix);
